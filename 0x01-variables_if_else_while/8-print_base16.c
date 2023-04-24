@@ -10,16 +10,14 @@
 int main(void)
 {
 	int n;
-	char ch;
+	 char hex[16] = "0123456789abcdef";
 
 	for (n = 0; n < 16; n++)
 	{
-		putchar(n);
+		 putchar(hex[n]);
 	}
-	for (ch = 'a'; ch <= 'f'; ch++)
-	{
-		putchar(ch);
-	}
+	
 	putchar('\n');
+	
 	return (0);
 }
