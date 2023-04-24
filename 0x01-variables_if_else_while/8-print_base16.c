@@ -9,15 +9,16 @@
  */
 int main(void)
 {
-	int n;
-	 char hex[16] = "0123456789abcdef";
+int n;
+char hex[16] = "0123456789abcdef";
+srand(time(0));
+n = rand() - RAND_MAX / 2;
+/* your code goes there */
+for (n = 0; n < 16; n++)
+{
+putchar(hex[n]);
+}
+putchar('\n');
 
-	for (n = 0; n < 16; n++)
-	{
-		 putchar(hex[n]);
-	}
-	
-	putchar('\n');
-	
-	return (0);
+return (0);
 }
